@@ -1,0 +1,195 @@
+<!Doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <link rel="shortcut icon" href="C:\Users\moham\OneDrive\Desktop\Botanicasha\botanicaasha.png"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Signin Page</title>
+</head>
+<body class="bg-green">
+
+       <!--  Navigation Bar-->
+     <nav class="flex items-right text-black ">
+         <div class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 shadow-xl ">
+             <a href="index.html"><img src=C:\Users\moham\OneDrive\Desktop\Botanicasha\botanicaasha.png" class="w-20 cursor-pointer"></a>
+        <ul class="flex-1 text-right text-black">
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="index.html" class="no-underline px-2">Home</a></li>
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="service.html" class="no-underline px-2">Services</a></li>
+            <li class="list-none inline-block px-5 text-lg leading-lg hover:underline hover:bg-gray-200 hover:font-bold hover:rounded-full"><a href="faq.html" class="no-underline px-2">FAQs</a></li>
+
+            </a>
+              </li>
+          </ul>
+             <a href="register.html">
+                  <button class="bg-black text-white active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 rounded-full px-6" type="button" style="transition: all 0.15s ease 0s;"> Register </button>
+                 </a>
+         </div>
+         </nav>
+     <!--  Navigation Bar-->
+
+      <br>
+      <br>
+<!--           &lt;!&ndash; Error message container &ndash;&gt;-->
+<!--        <div class="top-40 absolute right-0 z-50 w-full flex justify-center">-->
+<!--          {% with messages = get_flashed_messages(with_categories=true) %}-->
+<!--          {% if messages %}-->
+<!--          {% for category, message in messages %}-->
+<!--          {% if category == 'error' %}-->
+<!--          <div class="alert alert-danger">{{ message }}</div>-->
+<!--          {% endif %}-->
+<!--          {% endfor %}-->
+<!--          {% endif %}-->
+<!--          {% endwith %}-->
+        </div>
+
+       <br><br>
+      <!-- Form Part with Wonderful Card -->
+<div class="flex justify-center items-center h-screen place-items-center">
+    <div id="form" class="bg-gradient-to-r from-gray-600 to-gray-400 p-8 rounded-md shadow-lg w-96">
+        <form method="POST">
+            <h2 class="text-white text-3xl font-bold ml-5">Botanicasha</h2>
+
+
+            <div class="mb-4 text-center">
+<!--                <img src="C:\Users\moham\OneDrive\Desktop\Botanicasha\botanicaasha.png" class="w-20" alt="botanicaasha.png">-->
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+                <label class="text-white text-sm">Email</label><br>
+               <input type = 'text' id = 'Email'>
+            </div>
+
+            <!-- Password -->
+            <div class="mb-4">
+                <label class="text-white text-sm">Password</label><br>
+                <input type = 'text' id = 'password'>
+            </div>
+
+            <!-- Sign In Button -->
+
+            <div class="mb-4">
+
+                <button class="bg-white text-purple-600 font-bold py-2 px-4 rounded-full hover:bg-purple-600 hover:text-white">Submit</button><br>
+
+            </div>
+
+            <!-- Register Link -->
+            <p class="text-white text-xs my-2">Don't have an account? <a href="register.html" class="text-blue-300">Register</a></p>
+        </form>
+    </div>
+</div>
+
+       <!--   Form part-->
+
+
+<!--   Footer section-->
+        <footer class="relative bg-green-300 pt-20 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg
+          class="absolute bottom-3 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="Ayurveda"
+          version="1.1"
+          viewBox="0 0 260 1000"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-green-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-2xl font-bold">Botanicasha</h4>
+
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#
+
+"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="service.html">
+                      Services</a
+                    >
+                  </li>
+
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              © Botanicasha
+              <a
+                href="#"
+                class="text-gray-600 hover:text-gray-900"
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+       <!--    Footer Section-->
+
+</body>
+</html>

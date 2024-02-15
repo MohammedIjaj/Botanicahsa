@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="C:\Users\moham\OneDrive\Desktop\Botanicasha\botanicaasha.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="../static/assets/img/apple-icon.png"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+        <!-- Navigation Bar -->
+<nav class="bg-white shadow-md">
+    <div class="container mx-auto flex items-center justify-between p-4">
+
+        <!-- Logo -->
+        <a href="{{ url_for('index') }}" class="flex items-center">
+            <img src="C:\Users\moham\OneDrive\Desktop\Botanicasha\botanicaasha.png" alt="Botanicasha Logo" class="w-12 md:w-20 h-auto cursor-pointer transition-transform transform hover:scale-105">
+        </a>
+
+        <!-- Menu Items -->
+        <ul class="flex space-x-8 text-black">
+            <li class="hover:underline"><a href="{{ url_for('index') }}" class="no-underline">Home</a></li>
+            <li class="hover:underline"><a href="{{ url_for('service') }}" class="no-underline">Disease Detection</a></li>
+            <li class="hover:underline"><a href="{{ url_for('med_service') }}" class="no-underline">Medicine Recommendation</a></li>
+            <li class="hover:underline"><a href="{{ url_for('doc') }}" class="no-underline">Treatment Centers</a></li>
+            <li class="hover:underline"><a href="{{ url_for('faq') }}" class="no-underline">FAQs</a></li>
+        </ul>
+    </div>
+</nav>
+
+         <!--  Navigation Bar-->
+<!-- Section: FAQ -->
+<section class="my-14">
+  <div class="container mx-14">
+    <h1 class="text-2xl mb-4 pb-2 pt-28 text-black fw-bold">FAQ</h1>
+    <p class="mb-5 text-left">
+      <b>Find answers to the most frequently asked questions below.</b>
+    </p>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i><b> What is the purpose of this website?</b></h6>
+        <p>The purpose is to provide users with tools to predict diseases, receive Ayurvedic medicine recommendations, and get doctor recommendations.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i><b> Is the information accurate and reliable?</b></h6>
+        <p><strong></strong>We have gathered information from the internet, and while efforts are made to ensure accuracy, it's essential to exercise caution. For trustworthy advice, we recommend consulting with healthcare professionals before relying on the information presented here.</p>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i><b> How accurate is the disease predicting model?</b></h6>
+        <p>The accuracy varies depending on the disease but is generally high. However, it's not a substitute for a medical diagnosis.</p>
+      </div>
+
+      <!-- Add similar formatting for the remaining FAQ items -->
+
+    </div>
+  </div>
+</section>
+<!-- Section: FAQ -->
+
+
+          <!--   Footer section-->
+        <footer class="relative bg-green-300 pt-20 pb-6">
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg
+          class="absolute bottom-3 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="Ayurveda"
+          version="1.1"
+          viewBox="0 0 260 1000"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-green-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-2xl font-bold">Botanicasha</h4>
+
+          </div>
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#
+
+"
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="{{ url_for('service') }}">
+                      Services</a
+                    >
+                  </li>
+
+                </ul>
+              </div>
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Other Resources</span
+                >
+                <ul class="list-unstyled">
+
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-6 border-gray-400" />
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              © Botanicasha
+              <a
+                href="#"
+                class="text-gray-600 hover:text-gray-900"
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+        <!--   Footer section-->
+</body>
+</html>
